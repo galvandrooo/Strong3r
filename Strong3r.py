@@ -1,4 +1,4 @@
-#
+#Importação de módulo
 
 import random
 import string
@@ -21,11 +21,11 @@ def gerar_senha(tamanho_senha, incluir_minusculas=True, incluir_maiusculas=True,
   senha = "".join(random.choice(caracteres) for _ in range(tamanho_senha))
   return senha
 
-# Função para interagir com o usuário
+#Função para interagir com o usuário.
 
 def interagir_usuario():
 
-#  Interage com o usuário para obter as opções de senha.
+#Interage com o usuário para obter as opções de senha.
 
   tamanho_senha = int(input("Tamanho da senha desejada: "))
 
@@ -42,7 +42,7 @@ def interagir_usuario():
 
   return tamanho_senha, incluir_minusculas, incluir_maiusculas, incluir_numeros, incluir_simbolos
 
-# Chamada da função interativa e geração da senha
+#Chamada da função interativa e geração da senha
 
 tamanho_senha, incluir_minusculas, incluir_maiusculas, incluir_numeros, incluir_simbolos = interagir_usuario()
 senha = gerar_senha(tamanho_senha, incluir_minusculas, incluir_maiusculas, incluir_numeros, incluir_simbolos)
