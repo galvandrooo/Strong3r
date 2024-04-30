@@ -1,19 +1,11 @@
+#
+
 import random
 import string
 
 def gerar_senha(tamanho_senha, incluir_minusculas=True, incluir_maiusculas=True, incluir_numeros=True, incluir_simbolos=True):
 
-#  Gera uma senha forte com base nos parâmetros especificados.
 #
-#   Args:
-#    tamanho_senha (int): Tamanho da senha desejada.
-#    incluir_minusculas (bool): Incluir letras minúsculas na senha (padrão: True).
-#    incluir_maiusculas (bool): Incluir letras maiúsculas na senha (padrão: True).
-#    incluir_numeros (bool): Incluir números na senha (padrão: True).
-#    incluir_simbolos (bool): Incluir símbolos na senha (padrão: True).
-
-#  Returns:
-#    str: A senha gerada.
 
   caracteres = []
 
@@ -30,6 +22,7 @@ def gerar_senha(tamanho_senha, incluir_minusculas=True, incluir_maiusculas=True,
   return senha
 
 # Função para interagir com o usuário
+
 def interagir_usuario():
 
 #  Interage com o usuário para obter as opções de senha.
@@ -50,6 +43,7 @@ def interagir_usuario():
   return tamanho_senha, incluir_minusculas, incluir_maiusculas, incluir_numeros, incluir_simbolos
 
 # Chamada da função interativa e geração da senha
+
 tamanho_senha, incluir_minusculas, incluir_maiusculas, incluir_numeros, incluir_simbolos = interagir_usuario()
 senha = gerar_senha(tamanho_senha, incluir_minusculas, incluir_maiusculas, incluir_numeros, incluir_simbolos)
 print(f"Senha gerada: {senha}")
