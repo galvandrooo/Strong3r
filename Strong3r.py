@@ -19,7 +19,8 @@ def gerar_senha(tamanho_senha, incluir_minusculas=True, incluir_maiusculas=True,
 
 def interagir_usuario():
 
- tamanho_senha = int(input("TAMANHO DA SENHA: "))
+ tamanho_senha = int(input("""
+TAMANHO DA SENHA: """))
 
  while True:
     print('=' * 26)
