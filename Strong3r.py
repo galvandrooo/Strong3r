@@ -48,6 +48,6 @@ tamanho_senha, incluir_minusculas, incluir_maiusculas, incluir_numeros, incluir_
 senha = gerar_senha(tamanho_senha, incluir_minusculas, incluir_maiusculas, incluir_numeros, incluir_simbolos)
 print(f"""
 {'=' * (tamanho_senha + 7)}
-SENHA: {senha}
+SENHA: \033[1;34m{senha}\033[m
 {'=' * (tamanho_senha + 7)}
 """)
