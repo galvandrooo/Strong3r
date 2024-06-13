@@ -4,7 +4,7 @@ Um programa simples escrito em python, que gera uma senha segura, segundo seus r
 
 ---
 
+*funcionando no prompt de comando*
 **screenshot**
 
 ![sntronger/screenshot](stronger.png)
-*funcionando no prompt de comando*
